@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>添加新职位</title>
+	    <meta id="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1,user-scalable=no", name="viewport">
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<style>
+			.list .recruit_hide{
+				display: block;
+			}
+			.head .end{
+				width: 1.5rem;
+			}
+			.btn{
+				margin-left: 15.5%;
+			    display: inline-block;
+			    width: 10%;
+			    font-size: 0.14rem;
+			    border-radius: 0.02rem;
+			}
+			.right .bottom li.bottom_table{
+				width: 100%;
+			}
+			.right .bottom li.bottom_table>div{
+				width: 80%;
+				vertical-align:top;
+				display: inline-block;
+			}
+			.right .bottom li.bottom_table>div>a{
+				width: 1.1rem;
+				height: 0.4rem;
+				line-height: 0.4rem;
+				text-align: center;
+				margin-bottom: 0.1rem;
+				border: 1px solid #dcdcdc;
+				background-color: #fff;
+				border-radius: 0.02rem;
+				display: inline-block;
+			}
+			.right .bottom li.bottom_table>div>a.active{
+				border: 1px solid #f87730;
+				color: #f87730;
+				background-image: url(../img/yes.png);
+				background-repeat: no-repeat;
+				background-position: center right;
+			}
+			.right .bottom li.bottom_table>span{
+				width: 14.5%;
+    			margin-right: 1%;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="head">
+				<ul>
+					<li class="tit">青海大学科技园企业服务平台</li>
+					<li class="nav">
+						<a href="../index.html">首页</a>
+						<a href="javascript:void(0)">企业</a>
+						<a href="javascript:void(0)">融资</a>
+						<a href="javascript:void(0)">招聘</a>
+						<a href="javascript:void(0)">信息服务</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="end">137....1111/退出</a>
+						<div class="hide">
+							<a href="index.html">企业管理</a>
+							<a href="../login.html">退出</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="content">
+			<div class="content_center">
+				<div class="left">
+					<ul>
+						<li class="info">
+							<div class="portrait">
+								<img src="../img/portrait.png"/>
+							</div>
+							<div class="portrait_info">
+								<span>13555572857</span>
+								<span>企业会员</span>
+								<a href="javascript:void(0)" class="apply">进入企业首页</a>
+							</div>
+						</li>
+						<li class="list">
+							<a href="index.html">企业管理</a>
+							<a href="appointment.html">预约会议室管理</a>
+							<a href="financing.html">融资管理</a>
+							<a href="news.html">新闻管理</a>
+							<a href="position.html" class="recruit active">招聘管理</a>
+							<div class="recruit_hide hide">
+								<a href="position.html" class="red">职位发布</a>
+								<a href="talents.html">人才库</a>
+							</div>
+							<a href="user.html">用户管理</a>
+							<a href="personal_info.html" class="account">账户设置</a>
+							<div class="account_hide hide">
+								<a href="personal_info.html" class="red">个人信息</a>
+								<a href="change_password.html">修改密码</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="right">
+					<div class="top_tit">
+						职位发布
+					</div>
+					<div class="bottom">
+						<ul>
+							<li>
+								<span>职位名称</span>
+								<input type="text" name="" id="" value="" placeholder="请输入职位名称" />
+								<b class="required">*</b>
+							</li>
+							<li>
+								<span>最低学历</span>
+								<select name="">
+									<option value="">本科</option>
+									<option value="">大专</option>
+								</select>
+							</li>
+							<li>
+								<span>职能类别</span>
+								<input type="text" name="" id="" value="" placeholder="请输入职能类别" />
+								<b class="required">*</b>
+							</li>
+							<li>
+								<span>所属部门</span>
+								<input type="text" name="" id="" value="" placeholder="请输入所属部门" />
+								<b class="required">*</b>
+							</li>
+							<li>
+								<span>薪　   资</span>
+								<select name="">
+									<option value="">1000 - 2000</option>
+									<option value="">2000 - 3000</option>
+								</select>
+							</li>
+							<li>
+								<span>专业要求</span>
+								<input type="text" name="" id="" value="" placeholder="请输入专业要求" />
+							</li>
+							<li class="bottom_table">
+								<span>福利标签</span>
+								<div>
+									<a class="active">五险一金</a>
+									<a>免费班车</a>
+									<a>员工旅游</a>
+									<a>餐饮补贴</a>
+									<a>专业培训</a>
+									<a>出国机会</a>
+									<a>绩效奖金</a>
+									<a>年终奖金</a>
+									<a>股票期权</a>
+									<a>弹性工作</a>
+									<a>定期体检</a>
+								</div>
+								<br />
+								<b class="required" style="margin-left: 14.5%;">*请选择三种标签</b>
+							</li>
+							<li class="bottom_table">
+								<span>职位描述</span>
+								<textarea class="bottom_top"></textarea>
+								<b class="required">*</b>
+							</li>
+							<li class="bottom_table">
+								<a href="javascript:void(0)" class="btn">保存</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<footer>
+				copyright @ 2016青海大学企业服务平台 | ICP备15031425号-3
+			</footer>
+		</div>
+		<script type="text/javascript" src="../js/jquery-3.1.0.min.js" ></script>
+		<script type="text/javascript" src="../js/common.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+//				福利标签
+				$(".bottom_table>div>a").click(function(){
+					$(this).addClass("active");
+				});
+			});
+		</script>
+	</body>
+</html>

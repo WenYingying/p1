@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>立即预约会议室管理</title>
+	    <meta id="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1,user-scalable=no", name="viewport">
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<style>
+			.head .end{
+				width: 1.5rem;
+			}
+			.right .bottom li{
+				width: 100%;
+			}
+			.right .bottom li>span{
+				width: 8%;
+			}
+			.right .bottom li>input,.right .bottom li>select{
+				width: 20%;
+			}
+			.right .bottom li>textarea{
+				width: 46%;
+				max-width: 46%;
+			}
+			.btn{
+			    display: inline-block;
+			    width: 10%;
+			    font-size: 0.14rem;
+			    border-radius: 0.02rem;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="head">
+				<ul>
+					<li class="tit">青海大学科技园企业服务平台</li>
+					<li class="nav">
+						<a href="../index.html">首页</a>
+						<a href="javascript:void(0)">企业</a>
+						<a href="javascript:void(0)">融资</a>
+						<a href="javascript:void(0)">招聘</a>
+						<a href="javascript:void(0)">信息服务</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="end">137....1111/退出</a>
+						<div class="hide">
+							<a href="index.html">企业管理</a>
+							<a href="../login.html">退出</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="content">
+			<div class="content_center">
+				<div class="left">
+					<ul>
+						<li class="info">
+							<div class="portrait">
+								<img src="../img/portrait.png"/>
+							</div>
+							<div class="portrait_info">
+								<span>13555572857</span>
+								<span>企业会员</span>
+								<a href="javascript:void(0)" class="apply">进入企业首页</a>
+							</div>
+						</li>
+						<li class="list">
+							<a href="index.html" >企业管理</a>
+							<a href="appointment.html" class="active">预约会议室管理</a>
+							<a href="financing.html">融资管理</a>
+							<a href="news.html">新闻管理</a>
+							<a href="position.html" class="recruit">招聘管理</a>
+							<div class="recruit_hide hide">
+								<a href="position.html" class="red">职位发布</a>
+								<a href="talents.html">人才库</a>
+							</div>
+							<a href="user.html">用户管理</a>
+							<a href="personal_info.html" class="account">账户设置</a>
+							<div class="account_hide hide">
+								<a href="personal_info.html" class="red">个人信息</a>
+								<a href="change_password.html">修改密码</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="right">
+					<div class="top_tit">
+						预约会议室
+					</div>
+					<div class="bottom">
+						<ul>
+							<li>
+								<span>会议室</span>
+								<select name="">
+									<option value="">创业园1号楼D1会议室</option>
+									<option value="">创业园1号楼D2会议室</option>
+									<option value="">创业园1号楼D3会议室</option>
+								</select>
+							</li>
+							<li>
+								<span>会议室</span>
+								<label>青海省西宁市青海大学创业园1号楼4层4010室</label>
+							</li>
+							<li>
+								<span>会议备注</span>
+								<label>会议室内有投影仪，能容纳20人，茶水免费</label>
+							</li>
+							<li>
+								<span>预定日期</span>
+								<input type="datetime" name="" id="" value="" placeholder="请输入开始时间" />  ———  <input type="datetime" name="" id="" value="" placeholder="请输入结束时间" />
+							</li>
+							<li>
+								<span>备注</span>
+								<textarea></textarea>
+							</li>
+							<li>
+								<span></span>
+								<a href="javascript:void(0)" class="btn" >立即预约</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<footer>
+				copyright @ 2016青海大学企业服务平台 | ICP备15031425号-3
+			</footer>
+		</div>
+		<script type="text/javascript" src="../js/jquery-3.1.0.min.js" ></script>
+		<script type="text/javascript" src="../js/common.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				
+			});
+		</script>
+	</body>
+</html>

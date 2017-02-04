@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>企业管理</title>
+	    <meta id="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1,user-scalable=no", name="viewport">
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<style>
+			.head .end{
+				width: 1.5rem;
+			}
+			.right .bottom li>input{
+				display: none;
+			}
+			.right .bottom li>.upload_img{
+				display: none;
+			}
+			.right .bottom li>label>img,.right .bottom li>.upload_img>img{
+				width: 0.6rem;
+				height: 0.6rem;
+				border: 1px solid #d4d4d4;
+				vertical-align: middle;
+			}
+			.right .bottom .bottom_corporation,.right .bottom .bottom_product{
+				width: 100%;
+			}
+			.right .bottom .bottom_corporation>span,.right .bottom .bottom_product>span{
+				width: 15%;
+    			margin-right: 0.7%;
+			}
+			.right .bottom .bottom_corporation>textarea,.right .bottom .bottom_product>textarea{
+				display: none; 
+			}
+			.right .bottom li>.btn>input {
+			    position: absolute;
+			    right: 0;
+			    top: 0;
+			    opacity: 0;
+			    width: 100%;
+			    height: 0.35rem;
+			    filter: alpha(opacity=0);
+			    cursor: pointer
+			}
+			.btn{
+				width: 1rem;
+				height: 0.35rem;
+				line-height: 0.35rem;
+				border-radius: 0.02rem;
+				display: none;
+			}
+			.bottom_top{
+				vertical-align: top;
+			}
+			.required{
+				display: none;
+			}
+			.content_center li a.tit{
+				display: none;
+			}
+			.tip>b{
+				bottom: 0.05rem;
+    			left: -0.05rem;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="head">
+				<ul>
+					<li class="tit">青海大学科技园企业服务平台</li>
+					<li class="nav">
+						<a href="../index.html">首页</a>
+						<a href="javascript:void(0)">企业</a>
+						<a href="javascript:void(0)">融资</a>
+						<a href="javascript:void(0)">招聘</a>
+						<a href="javascript:void(0)">信息服务</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="end">137....1111/退出</a>
+						<div class="hide">
+							<a href="index.html">企业管理</a>
+							<a href="../login.html">退出</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="content">
+			<div class="content_center">
+				<div class="left">
+					<ul>
+						<li class="info">
+							<div class="portrait">
+								<img src="../img/portrait.png"/>
+							</div>
+							<div class="portrait_info">
+								<span>13555572857</span>
+								<span>企业会员</span>
+								<a href="javascript:void(0)" class="apply">进入企业首页</a>
+							</div>
+						</li>
+						<li class="list">
+							<a href="index.html" class="active">企业管理</a>
+							<a href="appointment.html">预约会议室管理</a>
+							<a href="financing.html">融资管理</a>
+							<a href="news.html">新闻管理</a>
+							<a href="position.html" class="recruit">招聘管理</a>
+							<div class="recruit_hide hide">
+								<a href="position.html" class="red">职位发布</a>
+								<a href="talents.html">人才库</a>
+							</div>
+							<a href="user.html">用户管理</a>
+							<a href="personal_info.html" class="account">账户设置</a>
+							<div class="account_hide hide">
+								<a href="personal_info.html" class="red">个人信息</a>
+								<a href="javascript:void(0)">修改密码</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="right">
+					<div class="top_tit">
+						企业管理
+						<a href="javascript:void(0)">编辑</a>
+					</div>
+					<div class="bottom">
+						<ul>
+							<li>
+								<span>企业/项目名称</span>
+								<label>北京赢康科技开发有限公司</label>
+								<input type="text" name="" id="" value="" placeholder="请输入公司名称" />
+								<b class="required">*</b>
+							</li>
+							<li>
+								<span>官网地址</span>
+								<label>wwww.yingkang.com</label> 
+								<input type="text" name="" id="" value="" placeholder="请输入官网地址" />
+							</li>
+							<li>
+								<span>法人代表</span>
+								<label>海洋</label>
+								<input type="text" name="" id="" value="" placeholder="请输入法人代表" />
+								<b class="required">*</b>
+							</li>
+							<li>
+								<span>成立时间</span>
+								<label>2016-10-07</label>
+								<input type="date" name="" id="" value="" placeholder="请输入成立时间" />
+								<b class="required">*</b>
+							</li>
+							<li>
+								<span>注册固定电话</span>
+								<label>010-40000000</label>
+								<input type="text" name="" id="" value="" placeholder="请输入注册固定电话" />
+							</li>
+							<li>
+								<span>注册固定地址</span>
+								<label>大鹏街道王母社区中南山路16号401室</label>
+								<input type="text" name="" id="" value="" placeholder="请输入注册固定地址" />
+							</li>
+							<li>
+								<span>统一社会信用代码</span>
+								<label>123456789012345678</label>
+								<input type="text" name="" id="" value="" placeholder="请输入社会信用代码" />
+								<b class="required">*</b>
+							</li>
+							<li>
+								<span>注册资本</span>
+								<label>500W</label>
+								<input type="text" name="" id="" value="" placeholder="请输入注册资本" />
+							</li>
+							<li>
+								<span>产品链接</span>
+								<label>www.chanpin.com</label>
+								<input type="text" name="" id="" value="" placeholder="请输入官网地址" />
+							</li>
+							<li style="position: relative;">
+								<span>上传项目企划书</span>
+								<label>北京赢康科技开发有限公司</label>
+								<a href="javascript:void(0)" class="btn" style="position: relative;">
+								    <input type="file" name="" id="">上传
+								</a>
+								<a class="tit">!</a>
+								<p class="tip">上传格式支持：PPT、pdf;
+									<b></b>
+								</p>
+							</li>
+							<li>
+								<span>公司logo</span>
+								<label><img src="../img/no-logo.jpg" /></label>
+								<a href="javascript:void(0)" class="upload_img">
+								    <img src="../img/no-logo.jpg" />
+								</a>
+							</li>
+							<li>
+								<span>营业执照</span>
+								<label><img src="../img/no-logo.jpg" /></label>
+								<a href="javascript:void(0)" class="upload_img">
+								    <img src="../img/no-logo.jpg" />
+								</a>
+							</li>
+							<li class="bottom_corporation">
+								<span>公司介绍</span>
+								<label class="bottom_top">北京赢康科技开发有限公司</label>
+								<textarea class="bottom_top"></textarea>
+							</li>
+							<li class="bottom_product">
+								<span>产品介绍</span>
+								<label class="bottom_top">北京赢康科技开发有限公司</label>
+								<textarea class="bottom_top"></textarea>
+							</li>
+							<li>
+								<a href="javascript:void(0)" class="btn" style="margin-left: 35%;">保存</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<footer>
+				copyright @ 2016青海大学企业服务平台 | ICP备15031425号-3
+			</footer>
+		</div>
+		<script type="text/javascript" src="../js/jquery-3.1.0.min.js" ></script>
+		<script type="text/javascript" src="../js/common.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+//				点击编辑显示隐藏
+				$(".right .top_tit>a").click(function(){
+					$(".bottom li>input").show();
+					$(".bottom li>textarea").show();
+					$(".bottom li>a.btn").css("display","inline-block");
+					$(".bottom li>a.upload_img").css("display","inline-block");
+					$(".bottom li>label").hide();
+					$(".required").show();
+					$(".content_center li a.tit").css("display","inline-block");
+				});
+				
+			});
+		</script>
+	</body>
+</html>

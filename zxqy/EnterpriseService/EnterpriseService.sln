@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{FD5D04C7-AF76-426C-94B4-49136926ED0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{E607BBC1-1233-4AD6-BE54-CE9B0E3CB5B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{6C76DD08-93C8-4EE2-AAEE-3CDED757A719}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{74487C20-9455-4CD0-8BB4-353A2A1BBC71}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "EnterpriseService", "EnterpriseService\", "{FA5BDEA3-199F-4535-B29D-5C1D7A2E5F49}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		ProjectReferences = "{6c76dd08-93c8-4ee2-aaee-3cded757a719}|BLL.dll;{74487C20-9455-4CD0-8BB4-353A2A1BBC71}|AbstractFactory.dll;{E607BBC1-1233-4AD6-BE54-CE9B0E3CB5B1}|DAL.dll;{FD5D04C7-AF76-426C-94B4-49136926ED0C}|Model.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_8329"
+		Debug.AspNetCompiler.PhysicalPath = "EnterpriseService\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_8329\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_8329"
+		Release.AspNetCompiler.PhysicalPath = "EnterpriseService\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_8329\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "8329"
+		SlnRelativePath = "EnterpriseService\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD5D04C7-AF76-426C-94B4-49136926ED0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD5D04C7-AF76-426C-94B4-49136926ED0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD5D04C7-AF76-426C-94B4-49136926ED0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD5D04C7-AF76-426C-94B4-49136926ED0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E607BBC1-1233-4AD6-BE54-CE9B0E3CB5B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E607BBC1-1233-4AD6-BE54-CE9B0E3CB5B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E607BBC1-1233-4AD6-BE54-CE9B0E3CB5B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E607BBC1-1233-4AD6-BE54-CE9B0E3CB5B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C76DD08-93C8-4EE2-AAEE-3CDED757A719}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C76DD08-93C8-4EE2-AAEE-3CDED757A719}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C76DD08-93C8-4EE2-AAEE-3CDED757A719}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C76DD08-93C8-4EE2-AAEE-3CDED757A719}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74487C20-9455-4CD0-8BB4-353A2A1BBC71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74487C20-9455-4CD0-8BB4-353A2A1BBC71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74487C20-9455-4CD0-8BB4-353A2A1BBC71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74487C20-9455-4CD0-8BB4-353A2A1BBC71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA5BDEA3-199F-4535-B29D-5C1D7A2E5F49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA5BDEA3-199F-4535-B29D-5C1D7A2E5F49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA5BDEA3-199F-4535-B29D-5C1D7A2E5F49}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA5BDEA3-199F-4535-B29D-5C1D7A2E5F49}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

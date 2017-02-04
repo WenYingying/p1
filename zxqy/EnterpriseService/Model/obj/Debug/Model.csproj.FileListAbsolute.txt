@@ -1,0 +1,10 @@
+E:\work\EnterpriseService\Model\bin\Debug\Model.dll
+E:\work\EnterpriseService\Model\bin\Debug\Model.pdb
+E:\work\EnterpriseService\Model\obj\Debug\Model.dll
+E:\work\EnterpriseService\Model\obj\Debug\Model.pdb
+E:\work\EnterpriseService\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\WorkStation\科技园\EnterpriseService\Model\bin\Debug\Model.dll
+D:\WorkStation\科技园\EnterpriseService\Model\bin\Debug\Model.pdb
+D:\WorkStation\科技园\EnterpriseService\Model\obj\Debug\Model.dll
+D:\WorkStation\科技园\EnterpriseService\Model\obj\Debug\Model.pdb
+D:\WorkStation\科技园\EnterpriseService\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

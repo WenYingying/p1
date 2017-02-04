@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人信息</title>
+	    <meta id="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1,user-scalable=no", name="viewport">
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<style type="text/css">
+			.list .account_hide{
+				display: block;
+			}
+			.bottom li{
+				vertical-align: top;
+			}
+			.right .bottom li.breadth{
+				width: 100%;
+			}
+			.right .bottom li.breadth>span{
+				width: 14.5%;
+				margin-right: 1%;
+			}
+			/*.right .bottom li.breadth>label{
+				width: 80%;
+			}*/
+			.right .bottom li>a.upload_img{
+				width: 0.5rem;
+			    height: 0.5rem;
+			    border: 1px solid #cfcfcf;
+			    display: inline-block;
+			    vertical-align: top;
+			    overflow: hidden;
+			}
+			.right .bottom li>a.upload_img>img{
+				width: 100%;
+				height: 100%;
+				display: block;
+			}
+			.bottom li>input,.bottom li>div{
+				display: inline-block;
+			}
+			.right .bottom li>input{
+				width: 30%;
+			}
+			.breadth>div>input[type="radio"]{
+				width: 0.2rem;
+			    height: 0.2rem;
+			    margin-right: 0.1rem;
+			    vertical-align: middle;
+			}
+			.breadth>div>input[type="radio"]:last-child{
+				margin-left: 0.3rem;
+			}
+			.bottom li>div.breadth_box{
+				width: 80%;
+    			vertical-align: top;
+				display: inline-block;
+			}
+			.right .bottom li .breadth_box li{
+				margin: 0;
+				margin-bottom: 0.1rem;
+			}
+			.right .bottom li .breadth_box li>span{
+				width: 100%;
+			    margin: 0;
+			    margin-top: 0.05rem;
+			    text-align: left;
+			}
+			.right .bottom li .breadth_box li>span:before{
+				content: "—";
+				padding-right: 0.15rem;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="head">
+				<ul>
+					<li class="tit">青海大学科技园企业服务平台</li>
+					<li class="nav">
+						<a href="../index.html">首页</a>
+						<a href="javascript:void(0)">企业</a>
+						<a href="javascript:void(0)">融资</a>
+						<a href="javascript:void(0)">招聘</a>
+						<a href="javascript:void(0)">信息服务</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="end">137....1111/退出</a>
+						<div class="hide">
+							<a href="index.html">企业管理</a>
+							<a href="../login.html">退出</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="content">
+			<div class="content_center">
+				<div class="left">
+					<ul>
+						<li class="info">
+							<div class="portrait">
+								<img src="../img/portrait.png"/>
+							</div>
+							<div class="portrait_info">
+								<span>13555572857</span>
+								<span>企业会员</span>
+								<a href="javascript:void(0)" class="apply">进入企业首页</a>
+							</div>
+						</li>
+						<li class="list">
+							<a href="index.html">企业管理</a>
+							<a href="appointment.html">预约会议室管理</a>
+							<a href="financing.html">融资管理</a>
+							<a href="news.html">新闻管理</a>
+							<a href="position.html" class="recruit">招聘管理</a>
+							<div class="recruit_hide hide">
+								<a href="position.html" class="red">职位发布</a>
+								<a href="talents.html">人才库</a>
+							</div>
+							<a href="user.html">用户管理</a>
+							<a href="personal_info.html" class="account active">账户设置</a>
+							<div class="account_hide hide">
+								<a href="personal_info.html" class="red">个人信息</a>
+								<a href="change_password.html">修改密码</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="right">
+					<div class="top_tit">
+						个人信息
+					</div>
+					<div class="bottom">
+						<ul>
+							<li>
+								<span>登录账户</span>
+								<label>a123456</label>
+							</li>
+							<li>
+								<span>个人头像</span>
+								<a href="javascript:void(0)" class="upload_img">
+								    <img src="../img/no-logo.jpg">
+								</a>
+							</li>
+							<li class="breadth">
+								<span>真实姓名</span>
+								<input type="text" name="" id="" value="" />
+							</li>
+							<li class="breadth">
+								<span>公司职位</span>
+								<input type="text" name="" id="" value="" />
+							</li>
+							<li class="breadth">
+								<span>性别</span>
+								<div>
+									<input type="radio" name="nax" id="" value="" />男
+									<input type="radio" name="nax" id="" value="" />女
+								</div>
+							</li>
+							<li class="breadth">
+								<span>电话号码</span>
+								<input type="tel" name="" id="" value="" />
+							</li>
+							<li class="breadth">
+								<span>公司Email</span>
+								<input type="email" name="" id="" value="" />
+							</li>
+							<li class="breadth">
+								<span>权限</span>
+								<div class="breadth_box">
+									<ul>
+										<li>
+											<div>企业信息管理 </div>
+											<span>修改信息</span>
+										</li>
+										<li>
+											<div>会议室管理 </div>
+											<span>预约会议室</span>
+										</li>
+										<li>
+											<div>融资管理 </div>
+											<span>增加融资</span>
+											<span>修改融资</span>
+											<span>删除融资</span>
+										</li>
+										<li>
+											<div>新闻管理 </div>
+											<span>增加新闻</span>
+											<span>修改新闻</span>
+											<span>删除融资</span>
+										</li>
+										<li>
+											<div>招聘管理 </div>
+											<span>新增职位</span>
+											<span>修改职位</span>
+											<span>删除职位</span>
+											<span>人才库</span>
+										</li>
+										<li>
+											<div>用户管理 </div>
+											<span>新增用户</span>
+											<span>修改用户</span>
+											<span>删除用户</span>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<footer>
+				copyright @ 2016青海大学企业服务平台 | ICP备15031425号-3
+			</footer>
+		</div>
+		<script type="text/javascript" src="../js/jquery-3.1.0.min.js" ></script>
+		<script type="text/javascript" src="../js/common.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+			});
+    </script>
+	</body>
+</html>

@@ -1,0 +1,213 @@
+
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>青海大学科技园企业服务平台-入园申请状态</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width,initial-scale=1.0, maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    
+    <style type="text/css">
+        .content_center > .right .bottom {
+            width: 9.1rem;
+            height: 3.94rem;
+            background-color: #f5f5f5;
+        }
+
+        .left {
+            height: 5.16rem;
+        }
+
+        .btn {
+            width: 3.5rem;
+            margin: 0 auto;
+            font-size: 0.16rem;
+            border-radius: 0.03rem;
+        }
+
+        .no_btn {
+            background-color: #eb6100;
+        }
+
+        .text {
+            width: 100%;
+            color: #556fb5;
+            text-align: center;
+            margin-top: 0.1rem;
+            display: block;
+        }
+
+        .right .bottom .progress {
+            width: 7.2rem;
+            margin: 1rem auto;
+            font-size: 0;
+        }
+
+            .right .bottom .progress li {
+                margin: 0;
+            }
+
+            .right .bottom .progress .node {
+                width: 0.2rem;
+                display: inline-block;
+                height: 0.2rem;
+                background-image: url(../img/gray_circle.png);
+            }
+            .right .bottom .progress .activenode{
+                background-image: url(../img/red_circle.png);
+            }
+
+            .right .bottom .progress .successnode{
+                background-image: url(../img/tick.png);
+            }
+
+            .right .bottom .progress .failnode{
+                background-image: url(../img/fail.png);
+            }
+
+
+            .right .bottom .progress .line {
+                width: 1.6rem;
+                height: 0.2rem;
+            }
+
+                .right .bottom .progress .line > div {
+                    width: 100%;
+                    height: 0.01rem;
+                    background-color: #c0c0c0;
+                    margin: 0.09rem 0;
+                }
+                .right .bottom .progress .line > div.active{
+                    background-color:#a40000;
+                }
+                .right .bottom .progress .line > div.fail{
+                    background-color:#eb6100;
+                }
+
+            .right .bottom .progress .state {
+                font-weight: 600;
+                color: #000;
+                width: 1.8rem;
+                height: auto;
+                text-align: center;
+                font-size: 0.14rem;
+                line-height: 0.5rem;
+            }
+            .right .bottom .progress .active{
+                    color:#a40000;
+            }
+    
+            .right .bottom .progress .fail{
+                    color:#eb6100;
+            }
+            </style>
+
+</head>
+<body>
+    <header>
+        <div class="head">
+            <ul>
+                <li class="tit">青海大学科技园企业服务平台</li>
+                <li class="nav">
+                    <a href="../../index.html">首页</a>
+                    <a href="javascript:void(0)">企业</a>
+                    <a href="javascript:void(0)">融资</a>
+                    <a href="javascript:void(0)">招聘</a>
+                    <a href="javascript:void(0)">信息服务</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="end">大师傅似的/退出</a>
+                    <div class="hide">
+                        <a href="Default.aspx">管理</a>
+                        <a href="../../login.html">退出</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <div class="content_center">
+            <div class="left">
+                <ul>
+                    <li class="info">
+                        <div class="portrait">
+                            <img src="../../img/portrait.png" />
+                        </div>
+                        <div class="portrait_info">
+                            <span>大师傅似的</span>
+                            <span>135****6891</span>
+                            <a href="javascript:void(0)" class="apply">进入企业首页</a>
+                        </div>
+                    </li>
+                    <li class="list">
+                        <a href="../EnterpriseInfo/RequestState.aspx" data-menu="Ent">入园申请</a>
+                        <a href="../EnterpriseInfo/Default.aspx" data-menu="Ent">企业信息</a>
+                        <a href="appointment.html">预约会议室管理</a>
+                        <a href="financing.html">融资管理</a>
+                        <a href="news.html">新闻管理</a>
+                        <a href="position.html" class="recruit">招聘管理</a>
+                        <div class="recruit_hide hide">
+                            <a href="position.html" class="red">职位发布</a>
+                            <a href="talents.html">人才库</a>
+                        </div>
+                        <a href="user.html">用户管理</a>
+                        <a href="javascript:void(0)" class="account">账户设置</a>
+                        <div class="account_hide hide">
+                            <a href="javascript:void(0)" class="red">个人信息</a>
+                            <a href="javascript:void(0)">修改密码</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="top_tit">
+                    申请状态
+                    
+
+                </div>
+                <div class="bottom">
+                    
+    <div class="progress">
+        <ul>
+            <li class="line" style="width: 0.8rem;">
+                <div class="fail"></div>
+            </li>
+            <li class="node failnode"></li>
+            <li class="line">
+                <div></div>
+            </li>
+            <li class="node"></li>
+            <li class="line">
+                <div></div>
+            </li>
+            <li class="node"></li>
+            <li class="line">
+                <div></div>
+            </li>
+            <li class="node"></li>
+            <li class="line" style="width: 0.8rem;">
+                <div></div>
+            </li>
+            
+        </ul>
+        <ul>
+            <li class="state fail">1审核中</li>
+            <li class="state">2审核中</li>
+            <li class="state">3审核中</li>
+            <li class="state">4审核中</li>
+        </ul>
+    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="../../js/common.js"></script>
+    
+
+</body>
+</html>

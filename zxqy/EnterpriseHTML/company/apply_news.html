@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>添加新闻</title>
+	    <meta id="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1,user-scalable=no", name="viewport">
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<style>
+			.head .end{
+				width: 1.5rem;
+			}
+			.right .bottom li>textarea{
+				width: 46%;
+				max-width: 46%;
+			}
+			.btn{
+			    display: inline-block;
+			    width: 10%;
+			    font-size: 0.14rem;
+			    border-radius: 0.02rem;
+			}
+			.right .bottom li{
+				width: 100%;
+			}
+			.right .bottom li>span{
+				width: 14%;
+			}
+			.right .bottom li>label.li_label{
+				position: relative;
+				width: 1rem;
+			    height: 0.35rem;
+			    text-align: center;
+			    background-color: #fff;
+			    line-height: 0.35rem;
+			    border: 1px solid #dcdcdc;
+			    margin-right: 0.3rem;
+    			border-radius: 0.02rem;
+			}
+			.upload_img{
+				width: 0.34rem;
+			    height: 0.34rem;
+			    display: inline-block;
+			    border: 1px solid #d4d4d4;
+			    vertical-align: middle;
+			    overflow: hidden;
+			}
+			.upload_img>img{
+				width: 100%;
+				height: 100%;
+				display: block;
+			}
+			.remove{
+				position: absolute;
+				top: -0.1rem;
+				right: -0.06rem;
+				width: 0.2rem;
+			    height: 0.2rem;
+			    line-height: 0.2rem;
+			    text-align: center;
+			    border-radius: 50%;
+			    background-color: #000000;
+			    color: #fff;
+			    margin-left: 0.1rem;
+			    display: inline-block;
+			}
+			.bottom li a.tit{
+				background-color: #006c9b;
+			}
+			.bottom li .tip{
+				width: 1.87rem;
+			    background-color: #f1f8fc;
+			    padding: 0.08rem;
+			    position: absolute;
+			    top: -0.5rem;
+    			right: 53.5%;
+    			color: #333;
+			}
+			.bottom li .tip>b {
+			    width: 0.12rem;
+			    bottom: -0.14rem;
+			    left: 0.1rem;
+			    background-image: url(../img/tit_hide.jpg);
+			    background-repeat: no-repeat;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="head">
+				<ul>
+					<li class="tit">青海大学科技园企业服务平台</li>
+					<li class="nav">
+						<a href="javascript:void(0)">首页</a>
+						<a href="javascript:void(0)">企业</a>
+						<a href="javascript:void(0)">融资</a>
+						<a href="javascript:void(0)">招聘</a>
+						<a href="javascript:void(0)">信息服务</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="end">137....1111/退出</a>
+						<div class="hide">
+							<a href="index.html">企业管理</a>
+							<a href="../login.html">退出</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="content">
+			<div class="content_center">
+				<div class="left">
+					<ul>
+						<li class="info">
+							<div class="portrait">
+								<img src="../img/portrait.png"/>
+							</div>
+							<div class="portrait_info">
+								<span>13555572857</span>
+								<span>企业会员</span>
+								<a href="javascript:void(0)" class="apply">进入企业首页</a>
+							</div>
+						</li>
+						<li class="list">
+							<a href="index.html" >企业管理</a>
+							<a href="appointment.html">预约会议室管理</a>
+							<a href="financing.html">融资管理</a>
+							<a href="news.html" class="active">新闻管理</a>
+							<a href="position.html" class="recruit">招聘管理</a>
+							<div class="recruit_hide hide">
+								<a href="position.html" class="red">职位发布</a>
+								<a href="talents.html">人才库</a>
+							</div>
+							<a href="user.html">用户管理</a>
+							<a href="personal_info.html" class="account">账户设置</a>
+							<div class="account_hide hide">
+								<a href="personal_info.html" class="red">个人信息</a>
+								<a href="change_password.html">修改密码</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="right">
+					<div class="top_tit">
+						新闻管理
+					</div>
+					<div class="bottom">
+						<ul>
+							<li>
+								<span>新闻标题</span>
+								<input type="text" name="" id="" value="" />
+								<b class="required">*</b>
+							</li>
+							<!--<li style="overflow: visible;">
+								<span>标签</span>
+								<label class="li_label">新闻资讯<a class="remove">x</a></label>
+								<a href="javascript:void(0)" class="upload_img">
+								    <img src="../img/no-logo.jpg">
+								</a>
+								<b class="required">*</b>
+							</li>-->
+							<li style="overflow: visible;position: relative;">
+								<span>上传图片</span>
+								<a href="javascript:void(0)" class="upload_img" style="width: 0.6rem;height: 0.6rem;">
+								    <img src="../img/no-logo.jpg">
+								</a>
+								<a class="tit">!</a>
+								<p class=" tip">选择照片 支持jpg、jpeg、png、bmpf格式，照片小于1M
+（尺寸不可小于520X390PX）<b></b></p>
+							</li>
+							<li>
+								<span>内容</span>
+								<textarea></textarea>
+								<b class="required">*</b>
+							</li>
+							<li>
+								<span></span>
+								<a href="javascript:void(0)" class="btn" >提交</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<footer>
+				copyright @ 2016青海大学企业服务平台 | ICP备15031425号-3
+			</footer>
+		</div>
+		<script type="text/javascript" src="../js/jquery-3.1.0.min.js" ></script>
+		<script type="text/javascript" src="../js/common.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				
+			});
+		</script>
+	</body>
+</html>

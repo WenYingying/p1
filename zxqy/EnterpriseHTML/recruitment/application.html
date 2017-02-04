@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>申请表</title>
+		 <meta id="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1,user-scalable=no", name="viewport">
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<style type="text/css">
+			.content{
+				height: 83.5%;
+				top: 1.1rem;
+			}
+			.content_center{
+				margin-top: 0 !important;
+			}
+			.content > div {
+	            width: 7rem;
+	        }
+	        .content_center li {
+	            width: 7rem;
+	            margin-bottom: 0.2rem;
+	            height:auto;
+	        }
+            .content_center li.null:after {
+                content: attr(title);
+                margin-left: 1.7rem;
+                color: red;
+                display: none;
+            }
+            .enter {
+	            font-size: 0.22rem;
+	            text-align: center;
+	        }
+	        .content_center li>span {
+	            width: 1.5rem;
+	            text-align: right;
+	            margin-right: 0.1rem;
+	            display: inline-block;
+	        }
+	        .content_center li>div{
+	        	display: inline-block;
+	        	width: 5.1rem;
+	        }
+	        .content_center li input{
+	            width: 5rem;
+	            height: 0.35rem;
+	            line-height: 0.35rem;
+	            text-indent: 0.1rem;
+	            background-color: #fff;
+	            border: 1px solid #dcdcdc;
+	            font-size: 0.12rem;
+	            display: inline-block;
+	            border-radius: 0.03rem;
+	        }
+	        .btn{
+	        	width: 1.08rem;
+	        	border-radius: 0.02rem;
+	        	z-index: 11;
+	        }
+	        .content_center li a.btn > input {
+	            position: absolute;
+	            right: 0;
+	            top: 0;
+	            opacity: 0;
+	            width: 100%;
+	            height: 0.35rem;
+	            filter: alpha(opacity=0);
+	            cursor: pointer;
+	        }
+	        textarea {
+	            width: 5rem;
+	            height: 1.3rem;
+	            max-width: 5rem;
+	            max-height: 1.3rem;
+	            border: 1px solid #dcdcdc;
+	            outline: none;
+	            line-height: 0.2rem;
+	            font-size: 0.16rem;
+	            border-radius: 0.05rem;
+	            vertical-align: top;
+	        }
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="head">
+				<ul>
+					<li class="tit">青海大学科技园企业服务平台</li>
+					<li class="nav">
+						<a href="../index.html">首页</a>
+						<a href="../enterprise/index.html" >企业</a>
+						<a href="../finance/index.html">融资</a>
+						<a href="index.html">招聘</a>
+						<a href="../information/index.html">信息服务</a>
+					</li>
+					<li>
+						<a href="../enter.html" class="apply">申请入驻</a>
+						<a href="../login.html" class="login">登录</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="breadcrumbs">
+			<div>
+				<a href="../index.html">首页</a>
+				<span class="sep">/</span>
+				<a href="index.html">招聘</a>
+				<span class="sep">/</span>
+				<a href="info.html">招聘详情</a>
+				<span class="sep">/</span>
+				<a href="info.html">应聘申请表</a>
+			</div>
+		</div>
+		<div class="content">
+        <div class="content_center">
+            <ul>
+                <li class="enter">应聘申请表</li>
+                <li>
+                	<span>企业名称</span>
+                	<div>北京赢康科技开发有限公司</div>
+                </li>
+                <li>
+                	<span>应聘职位</span>
+                	<div>UI设计师</div>
+                </li>
+                <li class="null" title="请填写您的真实姓名">
+                	<span>应聘者姓名</span>
+                	<div><input type="text" name="" id="" value="" placeholder="请填写您的真实姓名" /></div>
+                	<b class="required">*</b>
+                </li>
+                <li class="null" title="请填写您的出生日期">
+                	<span>出生日期</span>
+                	<div><input type="date" name="" id="" value="" placeholder="请填写您的出生日期" /></div>
+                	<b class="required">*</b>
+                </li>
+                <li class="null" title="请填写您的联系方式">
+                	<span>手机号码</span>
+                	<div><input type="tel" name="" id="" value="" placeholder="请填写您的联系方式" /></div>
+                	<b class="required">*</b>
+                </li>
+                <li>
+                	<span>工作年限</span>
+                	<div><input type="number" name="" id="" value="" placeholder="请填写您的工作年限" /></div>
+                </li>
+                <li>
+                	<span>附件简历 </span>
+                	<div>
+                		<a href="javascript:void(0)" class="btn" style="position: relative;">
+                        	<input type="file" name="" id="">上传
+                    	</a>
+                	</div>
+                </li>
+                <li class="null" title="请填写您的自我介绍">
+                	<span>自我介绍</span>
+                	<div><textarea></textarea></div>
+                	<b class="required">*</b>
+                </li>
+                <li>
+                	<span></span>
+                	<div>
+                		<a href="info.html" class="btn">确定提交</a>
+                	</div>
+                </li>
+            </ul>
+        </div>
+	</body>
+</html>

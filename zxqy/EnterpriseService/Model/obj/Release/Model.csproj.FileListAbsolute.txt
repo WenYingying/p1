@@ -1,0 +1,10 @@
+D:\WorkStation\科技园\EnterpriseService\Model\bin\Release\Model.dll
+D:\WorkStation\科技园\EnterpriseService\Model\bin\Release\Model.pdb
+D:\WorkStation\科技园\EnterpriseService\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
+D:\WorkStation\科技园\EnterpriseService\Model\obj\Release\Model.dll
+D:\WorkStation\科技园\EnterpriseService\Model\obj\Release\Model.pdb
+E:\科技园\EnterpriseService\Model\bin\Release\Model.dll
+E:\科技园\EnterpriseService\Model\bin\Release\Model.pdb
+E:\科技园\EnterpriseService\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
+E:\科技园\EnterpriseService\Model\obj\Release\Model.dll
+E:\科技园\EnterpriseService\Model\obj\Release\Model.pdb

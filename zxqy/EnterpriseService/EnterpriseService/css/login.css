@@ -1,0 +1,195 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	font-size: 100px;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	font-family: "Microsoft YaHei", "微软雅黑";
+	font-size: 0.14rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 0.14rem;
+	font-weight: normal;
+}
+a {
+	text-decoration: none;
+	color: #333;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0.1);
+	cursor: pointer;
+}
+
+ul,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	overflow: hidden;
+}
+
+header,
+footer {
+	clear: both;
+}
+
+li {
+	list-style-type: none;
+}
+
+select,
+input {
+	outline: none;
+}
+
+body {
+	background: url(../img/login_bg.jpg) top left;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.content {
+	position: relative;
+	max-width: 12rem;
+	height: 100%;
+	margin: 0 auto;
+	top: 2rem;
+	color: #fff;
+}
+
+.content>h1 {
+	width: 6rem;
+	background-image: url(../img/login_tit.png);
+	background-repeat: no-repeat;
+	background-position: 0rem 0.02rem;
+	font-weight: 600;
+	font-size: 0.4rem;
+	line-height: 1.5rem;
+}
+
+.login {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 3.46rem;
+	background: rgba(0, 0, 0, .6);
+}
+
+.login li {
+	margin: 0 7%;
+	margin-bottom: 0.26rem;
+	overflow: hidden;
+	border: 1px solid #e6e6e6;
+	width: 86%;
+	height: 0.4rem;
+}
+
+.login li:last-child {
+	margin-bottom: 0.46rem;
+	border: 0;
+}
+
+li>input {
+	border: 0;
+	width: 96%;
+	height: 0.4rem;
+	padding: 0 2%;
+	background-color: transparent;
+	color: #fff;
+	font-size: 0.14rem;
+}
+
+li.title {
+	border: 0;
+	height: auto;
+	margin-bottom: 0;
+}
+
+li.title>a {
+	color: #fff;
+	overflow: hidden;
+	height: 0.66rem;
+	line-height: 0.66rem;
+	display: inline-block;
+}
+
+li.title>a:last-child {
+	/*margin-left: 1.95rem;*/
+}
+
+.btn {
+	width: 100%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	text-align: center;
+	display: block;
+	background-color: #a40000;
+	color: #fff;
+	font-size: 0.18rem;
+}
+
+@media (max-width: 1024px) {
+	.content>h1 {
+		width: 5rem;
+		background-image: url(../img/login_tit.png);
+		background-size: 70%;
+		background-repeat: no-repeat;
+		background-position: 0rem 0.02rem;
+		font-weight: 600;
+		font-size: 0.4rem;
+		line-height: 1.5rem;
+	}
+	li.title>a:last-child {
+		margin-left: 0.5rem;
+	}
+}
+
+@media (max-width: 650px) {
+	.login {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 6.46rem;
+		background: rgba(0, 0, 0, .6);
+	}
+}
+/*找回密码*/
+li.verify>input{
+	width: 50%;
+}
+li.verify>a{
+	text-align: center;
+    display: block;
+    background-color: #a40000;
+    color: #fff;
+    font-size: 0.14rem;
+    width: 34%;
+    float: right;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    margin: 0.05rem;
+}
+li.error{
+	color: red;
+	border: 0;
+	font-size: 0.12rem;
+	margin-bottom: 0;
+	line-height: 0.3rem;
+	height: 0.3rem;
+	display: none;
+}
+/*找回密码*/

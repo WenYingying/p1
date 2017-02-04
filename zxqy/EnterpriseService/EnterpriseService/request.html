@@ -1,0 +1,537 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>申请入驻</title>
+    <meta id="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1,user-scalable=no" , name="viewport" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <style type="text/css">
+        .content > div {
+            width: 7rem;
+        }
+
+        .content_center li {
+            width: 7rem;
+            margin-bottom: 0.2rem;
+            height: auto;
+        }
+
+            .content_center li.null:after {
+                content: attr(title);
+                margin-left: 1.7rem;
+                color: red;
+            }
+
+        .enter {
+            font-size: 0.22rem;
+            text-align: center;
+        }
+
+        .content_center li > span {
+            width: 1.5rem;
+            text-align: right;
+            margin-right: 0.1rem;
+            display: inline-block;
+        }
+
+        .content_center li input, .content_center li select {
+            width: 5rem;
+            height: 0.35rem;
+            line-height: 0.35rem;
+            text-indent: 0.1rem;
+            background-color: #fff;
+            border: 1px solid #dcdcdc;
+            font-size: 0.12rem;
+            display: inline-block;
+            border-radius: 0.03rem;
+        }
+
+        .content_center li > select {
+            width: 1.5rem;
+            margin-right: 0.22rem;
+        }
+
+        .content_center li > div {
+            display: inline-block;
+            width: 5rem;
+            line-height: 0.35rem;
+            text-align: left;
+        }
+
+        .apply {
+            display: inline-block;
+        }
+
+        .content_center li > div > input[type="radio"] {
+            width: 0.2rem;
+            height: 0.2rem;
+            margin-right: 0.05rem;
+            vertical-align: middle;
+        }
+
+            .content_center li > div > input[type="radio"]:last-child {
+                margin-left: 0.3rem;
+            }
+
+        .upload_img {
+            width: 0.6rem;
+            height: 0.6rem;
+            display: inline-block;
+            border: 1px solid #d4d4d4;
+            vertical-align: middle;
+            overflow: hidden;
+        }
+
+            .upload_img > img {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+
+        .content_center li a.tit {
+            width: 0.2rem;
+            height: 0.2rem;
+            line-height: 0.2rem;
+            text-align: center;
+            border-radius: 50%;
+            background-color: #a0a0a0;
+            color: #fff;
+            margin-left: 0.1rem;
+            display: inline-block;
+        }
+
+        .content_center li a.btn > input {
+            position: absolute;
+            right: 0;
+            top: 0;
+            opacity: 0;
+            width: 100%;
+            height: 0.35rem;
+            filter: alpha(opacity=0);
+            cursor: pointer;
+        }
+
+        .tip {
+            width: 2rem;
+            font-size: 0.12rem;
+            line-height: 0.15rem;
+            border: 1px solid #dcdcdc;
+            background-color: #333333;
+            color: #fff;
+            padding: 0.08rem;
+            position: absolute;
+            top: 0;
+            right: 35%;
+            white-space: normal;
+            opacity: 0;
+            transition: opacity ease-in-out 0.5s;
+        }
+
+        .tipshow {
+            opacity: 1;
+        }
+
+
+        .tip > b {
+            width: 0.07rem;
+            height: 0.14rem;
+            position: absolute;
+            top: 0.2rem;
+            left: -0.07rem;
+            background-image: url(img/corner.png);
+            background-repeat: no-repeat;
+        }
+
+        textarea {
+            width: 5rem;
+            height: 1.3rem;
+            max-width: 5rem;
+            max-height: 1.3rem;
+            border: 1px solid #dcdcdc;
+            outline: none;
+            line-height: 0.2rem;
+            font-size: 0.16rem;
+            border-radius: 0.05rem;
+            vertical-align: top;
+        }
+
+        .btn {
+            width: 1.2rem;
+            border-radius: 0.03rem;
+            display: inline-block;
+        }
+
+        .required {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <ul>
+                <li class="tit">青海大学国家大学科技园企业服务平台</li>
+                <li class="nav">
+                    <a href="Default.aspx" class="active">首页</a>
+                    <a href="Enterprise/Default.aspx">企业</a>
+                    <a href="Finance/Default.aspx">融资</a>
+                    <a href="Hr/Default.aspx">招聘</a>
+                    <a href="Information/Default.aspx">信息服务</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" class="apply">申请入驻</a>
+                    <a href="login.html" class="login">登录</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="content">
+        <div class="content_center">
+            <ul>
+                <li class="enter">申请入驻</li>
+                <li>
+                    <span>入驻类型</span>
+                    <div>
+                        <input type="radio" checked="checked" name="nax" value="enterprise" data-role="type" />企业
+                        <input type="radio" name="nax" value="project" data-role="type" />项目
+                    </div>
+                </li>
+                <li title="请输入企业名称" data-role="enterprise">
+                    <span>企业名称</span>
+                    <input type="text" name="" id="CompanyName" value="" placeholder="请填写企业名称" />
+                    <b class="required">*</b>
+                </li>
+                <li title="请填写项目名称" data-role="project">
+                    <span>项目名称</span>
+                    <input type="text" name="" value="" id="ProjectName" placeholder="请填写项目名称" />
+                    <b class="required">*</b>
+                </li>
+                <li title="请填写项目简介" data-role="project">
+                    <span>项目简介</span>
+                    <textarea id="ProjectIntr"></textarea>
+                    <b class="required">*</b>
+                </li>
+                <li title="请输入营业执照法人名称" data-role="enterprise">
+                    <span>法人代表</span>
+                    <input type="text" name="" id="LegalPerson" value="" placeholder="请填写营业执照法人名称" />
+                    <b class="required">*</b>
+                </li>
+                <li title="请输入社会信用代码" data-role="enterprise">
+                    <span>统一社会信用代码</span>
+                    <input type="text" name="" id="LicenseCode" value="" placeholder="请填写社会信用代码" />
+                    <b class="required">*</b>
+                </li>
+                <li title="请选择公司注册区域" data-role="enterprise">
+                    <span>请选择注册区域</span>
+                    <select>
+                        <option value="0">省</option>
+                    </select>
+                    <select>
+                        <option value="0">市</option>
+                    </select>
+                    <select name="" style="margin-right: 0;" id="County">
+                        <option value="0">县</option>
+                    </select>
+                    <b class="required">*</b>
+                </li>
+                <li title="请输入公司注册具体地址" data-role="enterprise">
+                    <span>注册具体位置</span>
+                    <input type="text" name="" id="RegisterAddr" value="" placeholder="请输入公司注册具体地址" />
+                    <b class="required">*</b>
+                </li>
+                <li style="position: relative;" title="请上传项目计划书或商业计划书">
+                    <span>上传项目计划书</span>
+                    <a href="javascript:void(0)" class="btn" style="position: relative;display: inline-block;margin-left: 0;" onclick="$(this).siblings('input[type=file]').click();">
+                        上传
+                    </a>
+                    <input type="hidden" id="ProjectPlan" />
+                    <a class="tit">!</a>
+                    <p class="tip" style="right: 22%;">
+                        上传格式支持：PPT、PDF、DOC;
+                        <b style="top: 0.08rem;"></b>
+                    </p>
+                    <b class="required">*</b>
+                    <input type="file" name="" id="" accept="application/vnd.ms-powerpoint,application/pdf,application/msword" style="opacity:0; width:3rem;" />
+                </li>
+                <li title="请输入您的姓名">
+                    <span>申请人</span>
+                    <input type="text" name="" id="Name" value="" placeholder="请填写您的姓名" />
+                    <b class="required">*</b>
+                </li>
+                <li title="请输入正确的手机号码">
+                    <span>申请人手机号码</span>
+                    <div>
+                        <input type="text" name="" id="Mobile" value="" placeholder="手机号码作为账号的登录账户" />
+                        <a href="javascript:void(0)" class="apply" style="display:none;">获取验证码</a>
+                    </div>
+                    <b class="required">*</b>
+                </li>
+                <li title="请输入收到的短信验证码，为6位数字" style="display:none;">
+                    <span>短信验证码</span>
+                    <input type="text" name="" id="SmsCkCode" value="" placeholder="请填写手机验证码" />
+                    <b class="required">*</b>
+                </li>
+                <li title="请输入登录密码，长度为6-16位字符">
+                    <span>登录密码</span>
+                    <input type="password" name="" id="Password" value="" placeholder="请填写账号的登录密码" />
+                    <b class="required">*</b>
+                </li>
+                <li data-role="enterprise">
+                    <span>公司简介</span>
+                    <textarea id="CompayIntr"></textarea>
+                </li>
+                <li>
+                    <span></span>
+                    <a href="javascript:void(0)" class="btn" id="submitBtn">确定提交</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $.post("Handler/GetProvinceHandler.ashx", {}, function (res) {
+                var json = JSON.parse(res);
+                if (json.Result) {
+                    $(json.Data).each(function () {
+                        $("<option>").appendTo($("#County").siblings("select:first")).val(this.ID).text(this.Name);
+                    });
+                    $("#County").siblings("select:first").change(function () {
+                        $(this).next("select").children("option:gt(0)").remove();
+                        $("#County").children("option:gt(0)").remove();
+
+                        $.post("Handler/GetCityHandler.ashx", { "ProvinceID": $(this).val() }, function (res) {
+                            json = JSON.parse(res);
+                            if (json.Result) {
+                                $(json.Data).each(function () {
+                                    $("<option>").appendTo($("#County").siblings("select:eq(1)")).val(this.ID).text(this.Name);
+                                });
+                                $("#County").siblings("select:eq(1)").change(function () {
+                                    $(this).next("select").children("option:gt(0)").remove();
+
+                                    $.post("Handler/GetCountyHandler.ashx", { "CityID": $(this).val() }, function (res) {
+                                        json = JSON.parse(res);
+                                        if (json.Result) {
+                                            $(json.Data).each(function () {
+                                                $("<option>").appendTo($("#County")).val(this.ID).text(this.Name);
+                                            });
+                                            return;
+                                        }
+                                        $("<option>").appendTo($("#County")).val(0).text(json.Message);
+                                    });
+                                });
+                                return;
+                            }
+                            $("<option>").appendTo($("#County").siblings("select:eq(1)")).val(0).text(json.Message);
+                        });
+                    });
+                    return;
+                }
+                $("<option>").appendTo($("#County").siblings("select:first")).val(0).text(json.Message);
+            });
+
+
+            $(".content_center li .tit").click(function () {
+                $(this).siblings(".tip").toggleClass("tipshow");
+            });
+
+            $("li[data-role='project']").hide();
+            $("input[data-role='type']").click(function () {
+                $("li[data-role]").hide();
+                $("li[data-role='" + $(this).val() + "']").show();
+            });
+
+            var sendsmsFunc = function (e) {
+                if (localStorage.SmsCodeCk) {
+                    localStorage.removeItem("SmsCodeCk");
+                }
+                var reg = /^1[34578]\d{9}$/;
+                if (!reg.test($.trim($("#Mobile").val()))) {
+                    $("#Mobile").parent().parent().addClass("null");
+                    return;
+                }
+                $("#Mobile").parent().parent().removeClass("null");
+
+                var This = $(e.target);
+                var splitTime = 30;
+                var i = splitTime;
+                $(This).off().text("重新发送(" + i + ")");
+                var t = setInterval(function () {
+                    if (i == 0) {
+                        i = splitTime;
+                        $(This).text("发送验证码");
+                        $(This).on("click", sendsmsFunc);
+                        clearInterval(t);
+                        return;
+                    }
+                    i--;
+                    $(This).off().text("重新发送(" + i + ")");
+                }, 1000);
+
+                $.post("Handler/SendSmsHandler.ashx", { "MobilePhone": $("#Mobile").val(), "TemplateId": "1", "t": Math.random() }, function (res) {
+                    var json = JSON.parse(res);
+                    if (json.Result) {
+                        localStorage.SmsCodeCk = json.Code;
+                        console.log(json.Debug);
+                        return;
+                    }
+                    i = splitTime;
+                    $(This).text("发送验证码");
+                    $(This).on("click", sendsmsFunc);
+                    clearInterval(t);
+                    alert(json.Message);
+                });
+            };
+            $(".apply").off().on("click", sendsmsFunc);
+
+            $("b.required").siblings("input[type!='file'],select#County,textarea").blur(function () {
+                if (($.trim($(this).val()).length == 0 || $.trim($(this).val()) == 0) && $(this).parent().css("display") != "none") {
+                    $(this).parent().addClass("null");
+                    return;
+                }
+                $(this).parent().removeClass("null");
+            });
+
+            $("#Mobile").blur(function () {
+                var reg = /^1[34578]\d{9}$/;
+                if (!reg.test($.trim($(this).val()))) {
+                    $(this).parent().parent().addClass("null");
+                    return;
+                }
+                $(this).parent().parent().removeClass("null");
+            });
+
+            var postFunc = function (e) {
+                $("b.required").siblings("input,select,textarea").blur();
+                $("#Mobile").blur();
+                if ($.trim($("#ProjectPlan").val()).length == 0) {
+                    $(this).parent().addClass("null");
+                }
+
+                if ($.trim($("#Password").val()).length < 6 || $.trim($("#Password").val()).length>16) {
+                    $(this).parent().addClass("null");
+                }
+
+                //if (!localStorage.SmsCodeCk || !/^[0-9]{6}$/.test($.trim($("#SmsCkCode").val()))) {
+                //    $("#SmsCkCode").parent().addClass("null");
+                //}
+                if ($("b.required").parent("li:not(:hidden).null").length > 0) {
+                    $(".content").scrollTop($(".content").scrollTop() + $("li:not(:hidden).null:eq(0)").offset().top - 60);
+                    return;
+                }
+                var addr = $("#County").siblings("select:eq(0)").children("option:selected").text() + $("#County").siblings("select:eq(1)").children("option:selected").text() + $("#County").children("option:selected").text() + $.trim($("#RegisterAddr").val());
+                var data = { "CompanyName": escape($.trim($("#CompanyName").val())), "CompanyIntr": escape($.trim($("#CompanyIntr").val())), "LegalPerson": escape($.trim($("#LegalPerson").val())), "RegisterAddr": escape(addr), "LicenseCode": escape($.trim($("#LicenseCode").val())), "ProjectName": escape($.trim($("#ProjectName").val())), "ProjectIntr": escape($.trim($("#ProjectIntr").val())), "ProjectPlan": escape($.trim($("#ProjectPlan").val())), "Mobile": escape($.trim($("#Mobile").val())), "Name": escape($.trim($("#Name").val())), "Password": escape($.trim($("#Password").val())),"RequestType":$("input[data-role='type']:checked").val() };
+
+                $(e.target).off().text("提交中....");
+
+                $.post("Handler/CheckSmsCodeHandler.ashx", { "Plaintext": $.trim($("#SmsCkCode").val()) + "|" + $.trim($("#Mobile").val()), "Ciphertext": localStorage.SmsCodeCk }, function (res) {
+                    var json = JSON.parse(res);
+                    if (json.Result)
+                    {
+                        localStorage.removeItem("SmsCodeCk");
+                        $.post("Handler/RequestHandler.ashx", data, function (res) {
+                            json = JSON.parse(res);
+                            if (json.Result)
+                            {
+                                alert("入园申请提交成功！");
+                                $.post("Handler/LoginHandler.ashx", { "Mobile": $.trim($("#Mobile").val()), "Password": $.trim($("#Password").val()) }, function (res) {
+                                    json = JSON.parse(res);
+                                    if (json.Result) {
+                                        localStorage.User = JSON.stringify(json.Data);
+                                        location.href = "EnterpriseManage/Default.aspx";
+                                        return;
+                                    }
+                                    alert("登录失败");
+                                });
+                                return;
+                            }
+                            $(e.target).on("click", postFunc).text("确定提交");
+                            alert(json.Message);
+                        });
+                        return;
+                    }
+                    $(e.target).on("click",postFunc).text("确定提交");
+                    alert(json.Message);
+                });
+
+            };
+
+            $("#submitBtn").off().click(postFunc);
+
+            $("#ProjectPlan").siblings("input[type='file']").change(function () {
+                handleFiles("PlantFiles", this, $("#ProjectPlan"), $(this).siblings("a.btn"));
+            });
+
+            function handleFiles(path, obj, hostObj, process) {
+                var files = obj.files;
+                var desobj = $(hostObj);
+                desobj.val("");
+                if (window.URL) {
+                    //File API
+                    //$("<a>").appendTo($(obj).parent()).prop("href", window.URL.createObjectURL(files[0])).prop("target","_blank").text("预览");
+                } else if (window.FileReader) {
+                    //opera不支持createObjectURL/revokeObjectURL方法。我们用FileReader对象来处理
+                    //var reader = new FileReader();
+                    //reader.readAsDataURL(files[0]);
+                    //reader.onload = function (e) {
+                    //    $("<img>").appendTo(desobj).prop("src", this.result).css("height", ".9rem");
+                    //}
+                } else {
+                    //ie
+                    //obj.select();
+                    //obj.blur();
+                    //var nfile = document.selection.createRange().text;
+                    //document.selection.empty();
+                    //$("<img>").appendTo(desobj).prop("src", nfile).css("height", ".9rem");
+                }
+
+                var fd = new FormData();
+                fd.append("file", obj.files[0]);
+                fd.append("fileDir", path);
+
+                var xhr = new XMLHttpRequest();
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState == 4 && xhr.status == 200) {
+                        var json = $.parseJSON(xhr.responseText);
+                        if (json.Result) {
+                            process.text("上传成功");
+                            desobj.val(json.Src);
+                            desobj.parent().removeClass("NULL");
+                            return;
+                        }
+                        console.log(json.Message);
+                        //$(".ui-alert").fadeIn(1000).fadeOut(2000).text(xhr.responseText);
+                    }
+                    console.log(xhr.readyState);
+                }
+
+                //侦查当前附件上传情况
+                xhr.upload.onprogress = function (evt) {
+                    //侦查附件上传情况
+                    //通过事件对象侦查
+                    //该匿名函数表达式大概0.05-0.1秒执行一次
+                    //console.log(evt);
+                    //console.log(evt.loaded);  //已经上传大小情况
+                    //evt.total; 附件总大小
+                    var loaded = evt.loaded;
+                    var tot = evt.total;
+                    var per = Math.floor(100 * loaded / tot);  //已经上传的百分比
+                    process.text(per + "%");
+                    //div.css("width", per + "%");
+                    //p.html(per + "%");
+                    //if (per == 100)
+                    //    process.hide();
+                    //console.log(per);
+                    //var son = document.getElementById('son');
+                    //son.innerHTML = per + "%";
+                    //son.style.width = per + "%";
+
+                }
+                xhr.open("post", "Handler/UploadFileHandler.ashx");
+                xhr.send(fd);
+            }
+        });
+    </script>
+</body>
+</html>
