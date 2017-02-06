@@ -450,7 +450,7 @@
             </asp:Repeater>
         </div>
         <footer>
-            copyright @ 2016青海大学企业服务平台 | ICP备15031425号-3
+            copyright@2016青海大学国家大学科技园中小企业服务平台 | ICP备15031425号-3
         </footer>
     </div>
 
