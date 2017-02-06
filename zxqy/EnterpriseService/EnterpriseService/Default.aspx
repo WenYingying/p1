@@ -349,7 +349,7 @@
         <!--企业列表-->
         <div>
             <h1 class="title">
-                <a>企业入驻/Enterprise </a>
+                <a>入驻企业/Enterprise </a>
                 <a href="Enterprise/Default.aspx" class="more">更多</a>
             </h1>
             <asp:Repeater ID="rpEntList" runat="server">
