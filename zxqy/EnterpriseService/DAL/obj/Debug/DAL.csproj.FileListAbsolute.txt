@@ -16,3 +16,12 @@ D:\WorkStation\科技园\EnterpriseService\DAL\bin\Debug\Model.pdb
 D:\WorkStation\科技园\EnterpriseService\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 D:\WorkStation\科技园\EnterpriseService\DAL\obj\Debug\DAL.dll
 D:\WorkStation\科技园\EnterpriseService\DAL\obj\Debug\DAL.pdb
+E:\zxqy\p1\zxqy\EnterpriseService\DAL\bin\Debug\DAL.dll
+E:\zxqy\p1\zxqy\EnterpriseService\DAL\bin\Debug\DAL.pdb
+E:\zxqy\p1\zxqy\EnterpriseService\DAL\bin\Debug\AbstractFactory.dll
+E:\zxqy\p1\zxqy\EnterpriseService\DAL\bin\Debug\Model.dll
+E:\zxqy\p1\zxqy\EnterpriseService\DAL\bin\Debug\AbstractFactory.pdb
+E:\zxqy\p1\zxqy\EnterpriseService\DAL\bin\Debug\Model.pdb
+E:\zxqy\p1\zxqy\EnterpriseService\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\zxqy\p1\zxqy\EnterpriseService\DAL\obj\Debug\DAL.dll
+E:\zxqy\p1\zxqy\EnterpriseService\DAL\obj\Debug\DAL.pdb
