@@ -7,8 +7,3 @@ D:\WorkStation\科技园\EnterpriseService\AbstractFactory\bin\Debug\AbstractFac
 D:\WorkStation\科技园\EnterpriseService\AbstractFactory\obj\Debug\AbstractFactory.csprojResolveAssemblyReference.cache
 D:\WorkStation\科技园\EnterpriseService\AbstractFactory\obj\Debug\AbstractFactory.dll
 D:\WorkStation\科技园\EnterpriseService\AbstractFactory\obj\Debug\AbstractFactory.pdb
-E:\zxqy\p1\zxqy\EnterpriseService\AbstractFactory\bin\Debug\AbstractFactory.dll
-E:\zxqy\p1\zxqy\EnterpriseService\AbstractFactory\bin\Debug\AbstractFactory.pdb
-E:\zxqy\p1\zxqy\EnterpriseService\AbstractFactory\obj\Debug\AbstractFactory.csprojResolveAssemblyReference.cache
-E:\zxqy\p1\zxqy\EnterpriseService\AbstractFactory\obj\Debug\AbstractFactory.dll
-E:\zxqy\p1\zxqy\EnterpriseService\AbstractFactory\obj\Debug\AbstractFactory.pdb

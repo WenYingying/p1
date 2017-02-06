@@ -20,14 +20,3 @@ D:\WorkStation\科技园\EnterpriseService\BLL\bin\Debug\Model.pdb
 D:\WorkStation\科技园\EnterpriseService\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 D:\WorkStation\科技园\EnterpriseService\BLL\obj\Debug\BLL.dll
 D:\WorkStation\科技园\EnterpriseService\BLL\obj\Debug\BLL.pdb
-E:\zxqy\p1\zxqy\EnterpriseService\BLL\bin\Debug\BLL.dll
-E:\zxqy\p1\zxqy\EnterpriseService\BLL\bin\Debug\BLL.pdb
-E:\zxqy\p1\zxqy\EnterpriseService\BLL\bin\Debug\AbstractFactory.dll
-E:\zxqy\p1\zxqy\EnterpriseService\BLL\bin\Debug\DAL.dll
-E:\zxqy\p1\zxqy\EnterpriseService\BLL\bin\Debug\Model.dll
-E:\zxqy\p1\zxqy\EnterpriseService\BLL\bin\Debug\AbstractFactory.pdb
-E:\zxqy\p1\zxqy\EnterpriseService\BLL\bin\Debug\DAL.pdb
-E:\zxqy\p1\zxqy\EnterpriseService\BLL\bin\Debug\Model.pdb
-E:\zxqy\p1\zxqy\EnterpriseService\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
-E:\zxqy\p1\zxqy\EnterpriseService\BLL\obj\Debug\BLL.dll
-E:\zxqy\p1\zxqy\EnterpriseService\BLL\obj\Debug\BLL.pdb
