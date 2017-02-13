@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>立即预约会议室</title>
+	    <meta id="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1,user-scalable=no", name="viewport">
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<style>
+			.head .end{
+				width: 1.5rem;
+			}
+			.date_list{
+				width: 9.5rem;
+			    background-color: #f5f5f5;
+			    border-radius: 0.02rem;
+				border: 1px solid #bfbfbf;
+			}
+			.date_list>.date{
+				width: 9.5rem;
+				height: 0.6rem;
+				line-height: 0.6rem;
+				border-bottom: 1px solid #bfbfbf;
+			}
+			.date_list>.date>.apply{
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.date_list>.date>span{
+				display: inline-block;
+			    margin:0 1% 0 2%;
+			    text-align: right;
+			}
+			.date_list>.date>input{
+				width: 2rem;
+				height: 0.35rem;
+			    text-indent: 0.1rem;
+			    background-color: #fff;
+			    border: 1px solid #dcdcdc;
+			    border-radius: 0.02rem;
+			    font-size: 0.12rem;
+			    margin-right: 0.1rem;
+			}
+			.list_box li{
+				width: 9.5rem;
+				height: 0.36rem;
+				
+				border-bottom: 1px solid #bfbfbf;
+			}
+			.list_box li:last-child{
+				border-bottom:0;
+			}
+			.list_box li>div{
+				width: 0.55rem;
+				height: 0.36rem;
+				line-height: 0.36rem;
+				font-size: 0.12rem;
+				text-align: center;
+				display: inline-block;
+				border-right: 1px solid #bfbfbf;
+				vertical-align: middle;
+			}
+			.list_box li>div:last-child{
+				border-right: 0;
+			}
+			.list_box li>div:first-child{
+				width: 2.28rem;
+			}
+			.list_box li>div>a.reservation{
+				height: 0.36rem;
+				display: block;
+				margin-left: -0.033rem;
+				background-color: #fff;
+				color: #448aca;
+			}
+			.list_box li>div>a.no_reservation{
+				height: 0.36rem;
+				background-color: #e6e6e6;
+				display: block;
+				margin-left: -0.033rem;
+			}
+			.alert_no{
+				width: 2.8rem;
+				height: 1.2rem;
+				background-color: #cce8cf;
+				color: #000000;
+				border-radius: 0.03rem;
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-left: -1.4rem;
+				margin-top: -1rem;
+			}
+			.alert_no>span{
+				width: 2.8rem;
+				height: 0.7rem;
+				display: block;
+				border-bottom: 1px solid #b8d1ba;
+				text-indent: 0.2rem;
+				line-height: 0.7rem;
+				font-size: 0.12rem;
+			}
+			.btns{
+				width: 2.8rem;
+				height: 0.48rem;
+				text-align: center;
+    			line-height: 0.48rem;
+				background-color: #c2dcc4;
+			}
+			.btns>a{
+				width: 0.7rem;
+				height: 0.22rem;
+				line-height: 0.22rem;
+				display: inline-block;
+				text-align: center;
+				font-size: 0.12rem;
+				border: 2px solid #0078d7;
+				background-color: #e1e1e1;
+			}
+			.alert2{
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: rgba(0,0,0,.6);
+				z-index: 11;
+				display: none;
+			}
+			.succeed{
+				width: 6.2rem;
+				background-color: #f5f5f5;
+				border-radius: 0.02rem;
+				position: absolute;
+			    left: 50%;
+			    margin-left: -3.1rem;
+			    margin-top: 0.6rem;
+			}
+			.alert_head{
+			    width: 6.2rem;
+			    height: 0.4rem;
+			    line-height: 0.4rem;
+			    background-color: #e5e5e5;
+			}
+			.alert_head>h2{
+			    color: #000000;
+			    font-size: 0.16rem;
+			    font-weight: bold;
+			    display: inline-block;
+			    text-indent: 0.2rem;
+			}
+			.alert_head>a.close {
+			    float: right;
+			    margin-right: 0.15rem;
+			    color: #a1a1a1;
+			    font-weight: bold;
+			    font-size: 0.24rem;
+			}
+			.alert_box{
+			    width: 6.2rem;
+			    overflow-y: auto;
+			}
+			.alert_box li:first-child {
+			    margin-top: 0.2rem;
+			}
+			.alert_box li{
+			    margin-bottom: 0.2rem;
+			    vertical-align: top;
+			}
+			.alert_box span{
+			    width: 1.1rem;
+			    color: #626262;
+			    font-size: 0.12rem;
+			    text-align: right;
+			    margin-right: 0.1rem;
+			    display: inline-block;
+			    vertical-align: top;
+			}
+			.alert_box div{
+				width: 4.7rem;
+			    color: #333333;
+			    font-size: 0.14rem;
+			    display: inline-block;
+			}
+			.alert_box div>input{
+				width: 3rem;
+			    height: 0.4rem;
+			    color: #333333;
+			    font-size: 0.14rem;
+			    line-height: 0.4rem;
+			    background-color: #fff;
+			    border: 1px solid #dcdcdc;
+			    display: inline-block;
+			    text-indent: 0.1rem;
+			}
+			.alert_box div>textarea{
+				width: 4rem;
+			    height: 1.3rem;
+			    max-width: 4rem;
+			    max-height: 1.3rem;
+			    border: 1px solid #dcdcdc;
+			    outline: none;
+			    line-height: 0.2rem;
+			    font-size: 0.16rem;
+			    border-radius: 0.02rem;
+			    vertical-align: top;
+			}
+			.btn{
+				width: 1.1rem;
+    			display: inline-block;
+    			border-radius: 0.02rem;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="head">
+				<ul>
+					<li class="tit">青海大学国家大学科技园企业服务平台</li>
+					<li class="nav">
+						<a href="../index.html">首页</a>
+						<a href="javascript:void(0)">企业</a>
+						<a href="javascript:void(0)">融资</a>
+						<a href="javascript:void(0)">招聘</a>
+						<a href="javascript:void(0)">信息服务</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="end">137....1111/退出</a>
+						<div class="hide">
+							<a href="index.html">企业管理</a>
+							<a href="../login.html">退出</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<div class="content">
+			<div class="content_center">
+				<div class="left">
+					<ul>
+						<li class="info">
+							<div class="portrait">
+								<img src="../img/portrait.png"/>
+							</div>
+							<div class="portrait_info">
+								<span>13555572857</span>
+								<span>企业会员</span>
+								<a href="javascript:void(0)" class="apply">进入企业首页</a>
+							</div>
+						</li>
+						<li class="list">
+							<a href="index.html" >企业管理</a>
+							<a href="appointment.html" class="active">预约会议室管理</a>
+							<a href="financing.html">融资管理</a>
+							<a href="news.html">新闻管理</a>
+							<a href="position.html" class="recruit">招聘管理</a>
+							<div class="recruit_hide hide">
+								<a href="position.html" class="red">职位发布</a>
+								<a href="talents.html">人才库</a>
+							</div>
+							<a href="user.html">用户管理</a>
+							<a href="personal_info.html" class="account">账户设置</a>
+							<div class="account_hide hide">
+								<a href="personal_info.html" class="red">个人信息</a>
+								<a href="change_password.html">修改密码</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="right">
+					<div class="top_tit">
+						预约会议室
+						<a href="javascript:history.back(-1)">返回</a>
+					</div>
+					<div class="date_list">
+						<div class="date">
+							<span>请选择日期</span>
+							<input type="date" name="" id="" value="" placeholder="请选择日期" />
+							<a href="javascript:void(0)" class="apply">查找</a>
+						</div>
+						<div class="list_box">
+							<ul>
+								<li>
+									<div>会议室名称</div>
+									<div>08:00</div>
+									<div>09:00</div>
+									<div>10:00</div>
+									<div>11:00</div>
+									<div>12:00</div>
+									<div>13:00</div>
+									<div>14:00</div>
+									<div>15:00</div>
+									<div>16:00</div>
+									<div>17:00</div>
+									<div>18:00</div>
+									<div>19:00</div>
+								</li>
+								<li>
+									<div>创业园1号楼D1会议室</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+								</li>
+								<li>
+									<div>创业园1号楼D2会议室</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+								</li>
+								<li>
+									<div>创业园1号楼D3会议室</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+								</li>
+								<li>
+									<div>创业园1号楼D4会议室</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+								</li>
+								<li>
+									<div>创业园1号楼D5会议室</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+								</li>
+								<li>
+									<div>创业园1号楼D6会议室</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+								</li>
+								<li>
+									<div>创业园1号楼D7会议室</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="reservation">可预约</a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+									<div>
+										<a class="no_reservation"></a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				copyright @ 2016青海大学企业服务平台 | ICP备15031425号-3
+			</footer>
+		</div>
+		<div class="alert">
+			<div class="alert_no">
+				<span>时间已过或时间段已预约，无法申请！</span>
+				<div class="btns">
+					<a href="javascript:void(0)">确认</a>
+				</div>
+			</div>
+		</div>
+		<div class="alert2">
+			<div class="succeed">
+				<div class="alert_head">
+		            <h2>预约</h2>
+		            <a href="javascript:void(0)" class="close">X</a>
+		        </div>
+		        <div class="alert_box">
+		            <ul>
+		                <li>
+		                    <span>会议室名称</span>
+		                    <div id="RoomName">会议室1层D112室</div>
+		                </li>
+		                <li>
+		                    <span>会议室地址</span>
+		                    <div id="CompanyName">青海大学创业园1号楼D1会议室1楼104室</div>
+		                </li>
+		                <li>
+		                    <span>会议备注</span>
+		                    <div id="State">会议室内有投影仪、能容纳20人。茶水免费试用</div>
+		                </li>
+		                <li>
+		                    <span>开始时间</span>
+		                    <div id="StartTime">
+		                    	<input type="date" name="" id="" value="" />
+		                    </div>
+		                </li>
+		                <li>
+		                    <span>结束时间</span>
+		                    <div id="EndTime">
+		                    	<input type="date" name="" id="" value="" />
+		                    </div>
+		                </li>
+		                <li>
+		                    <span>备　　注</span>
+		                    <div id="Markup">
+		                    	<textarea name="" rows="" cols=""></textarea>
+		                    </div>
+		                </li>
+		                <li>
+		                	<span></span>
+		                	<a href="javascript:void(0)" class="btn">立即预约</a>
+		                	<a href="javascript:void(0)" class="btn" style="margin-left: 0.2rem;">取消</a>
+		                </li>
+		            </ul>
+		        </div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../js/jquery-3.1.0.min.js" ></script>
+		<script type="text/javascript" src="../js/common.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				$(".no_reservation").click(function(){
+					$(".alert").show();
+				});
+				$(".btns>a").click(function(){
+					$(".alert").hide();
+				});
+				$(".reservation").click(function(){
+					$(".alert2").show();
+				});
+				$(".close").click(function(){
+					$(".alert2").hide();
+				});
+				$(".btn").click(function(){
+					$(".alert2").hide();
+				});
+			});
+		</script>
+	</body>
+</html>
